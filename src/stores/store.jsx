@@ -356,7 +356,7 @@ class Store {
           tokens: [
             {
               id: 'WETH/pYFARMER Uniswap',
-              address: '0xff417643D4E98B52c7E894407dd23F8eDD8167f0',
+              address: '0x326D9b8C5b8DD4CF90264868D3Aa8A470e98A9f9',
               symbol: 'ETH',
               abi: config.erc20ABI,
               decimals: 18,
@@ -779,6 +779,9 @@ class Store {
         var balance = await erc20Contract.methods.balanceOf(asset.address).call({ from: account.address });
       } else {
         var balance = await erc20Contract.methods.balanceOf(asset.rewardsAddress).call({ from: account.address });
+      }
+      if(asset.id == "Germination Pool"){
+        var balance = 0;
       }
      // var balance = await erc20Contract.methods.balanceOf(asset.rewardsAddress).call({ from: account.address });
       balance = parseFloat(balance)/10**asset.decimals

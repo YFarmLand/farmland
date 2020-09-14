@@ -422,7 +422,7 @@ class Stake extends Component {
     return (
       <div className={classes.actions}>
         <div className={classes.actionContainer}>
-          {/*
+          {
           <Button
             fullWidth
             className={classes.primaryButton}
@@ -432,8 +432,8 @@ class Stake extends Component {
             onClick={() => { this.navigateInternal('stake') }}
           >
             <Typography className={classes.stakeButtonText} variant={'h4'}>{t('Stake.StakeTokens')}</Typography>
-          </Button>*/}
-        </div>{/*
+          </Button>}
+        </div>{
         <div className={classes.actionContainer}>
           <Button
             fullWidth
@@ -445,7 +445,7 @@ class Stake extends Component {
           >
             <Typography className={classes.buttonText} variant={'h4'}>{t('Stake.ClaimRewards')}</Typography>
           </Button>
-        </div>*/}
+        </div>}
         <div className={classes.actionContainer}>
           <Button
             fullWidth
@@ -458,7 +458,7 @@ class Stake extends Component {
             <Typography className={classes.buttonText} variant={'h4'}>{t('Stake.UnstakeTokens')}</Typography>
           </Button>
         </div>
-        {/*
+        {
         <div className={classes.actionContainer}>
           <Button
             fullWidth
@@ -470,7 +470,7 @@ class Stake extends Component {
           >
             <Typography className={classes.buttonText} variant={'h4'}>{t('Stake.Exit')}</Typography>
           </Button>
-        </div>*/}
+        </div>}
         {(pool.id === 'Governance' && voteLockValid) && <Typography variant={'h4'} className={classes.voteLockMessage}>{t('Stake.UnstakingTokens')}{voteLock}</Typography>}
       </div>
     )

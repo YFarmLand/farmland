@@ -9,8 +9,8 @@ const config = {
   biAnnualPoolYfiRewardsAddress: '0xeA13f909949463d54Ed711438Fce5456E5580EDa', 
   preAnnualPoolEthRewardsAddress: '0x78F2CbCB6a620bb42C9f7034819721EDa5F9C857', 
   preAnnualPoolCompRewardsAddress: '0x5fE252372a13cD723281C2E4dF661a9E28c53b9D',
-  preAnnualPoolYfiRewardsAddress: '0x7C72DABC8F04A7b75112b0e46Dc66b8EC5e5C4BF', //
-  abracadabraPoolRewardsAddress: '0x8401C50b52d9a12824E2882d038A6a586F6c9D7b',
+  preAnnualPoolYfiRewardsAddress: '0x7C72DABC8F04A7b75112b0e46Dc66b8EC5e5C4BF', 
+  abracadabraPoolRewardsAddress: '0xdbE7cFF1b42c96C341ec1Fef4C1c1c9BAFFCE8eb',
   infuraProvider: 'https://mainnet.infura.io/v3/4f9a4d05fe6f464e809cd3f4325f5fe9',
   uniswapRewardsAddres: '0x0d26363a3a78315F440A91eA4aF7838D21Bd08Be',
   abracadabraABI:[
